@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>763</width>
+    <height>451</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="start_button">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>380</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Почати</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>150</y>
+      <width>291</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="title">
+        <string>Оберіть шаблон рівняння 1</string>
+       </property>
+       <widget class="QComboBox" name="eq1_template_choice">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>261</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>a*x^2 + b*y^3 - 3 = 0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>a*sin(x) + b*cos(y) + 1 = 0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>a*ln(x) + b*lg(y) - 1 = 0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>a*x - b*cos(y) - 25 = 0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>a*x^3 - b*y^2 - 21 = 0</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>25</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="equation_1_input">
+       <property name="title">
+        <string>Введіть коефіцієнти рівняння 1:</string>
+       </property>
+       <widget class="QLabel" name="c00_label">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>50</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>x^2 + </string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="c00_input">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="c01_input">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>40</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="c01_label">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>50</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>y^3 - 3 = 0</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>40</y>
+      <width>171</width>
+      <height>93</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Оберіть метод розв'язку</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QRadioButton" name="secant_check">
+       <property name="text">
+        <string>Метод січних</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="newton_check">
+       <property name="text">
+        <string>Метод Ньютона</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>150</y>
+      <width>291</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="title">
+        <string>Оберіть шаблон рівняння 2</string>
+       </property>
+       <widget class="QComboBox" name="eq2_template_choice">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>261</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>a*x^2 + b*y^3  - 3 = 0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>a*sin(x) + b*cos(y) + 1 = 0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>a*ln(x) + b*lg(y)  - 1 = 0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>a*x - b*cos(y) - 25 = 0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>a*x^3 - b*y^2 - 21 = 0</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>25</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="equation_2_input">
+       <property name="title">
+        <string>Введіть коефіцієнти рівняння 2:</string>
+       </property>
+       <widget class="QLabel" name="c10_label">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>50</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>x^2 + </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="c11_label">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>50</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>y^3 - 3 = 0</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="c11_input">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>40</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="c10_input">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>40</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Введіть початкове наближення</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="x_label">
+       <property name="text">
+        <string>x0 = </string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="x0_input"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="y0_label">
+       <property name="text">
+        <string>y0 = </string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="y0_input"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>69</y>
+      <width>261</width>
+      <height>58</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Введіть точність (к-ть знаків після коми)</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="eps_label">
+       <property name="text">
+        <string>eps = </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="eps_input"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <action name="save_results">
+   <property name="icon">
+    <iconset theme="document-save" resource="resources.qrc">
+     <normaloff>:/res/img/icon_save.png</normaloff>:/res/img/icon_save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Зберегти результат до файлу</string>
+   </property>
+  </action>
+  <action name="close_program">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/res/img/imgonline-com-ua-Resize-4g37bogRtaOsPph.png</normaloff>:/res/img/imgonline-com-ua-Resize-4g37bogRtaOsPph.png</iconset>
+   </property>
+   <property name="text">
+    <string>Завершити роботу</string>
+   </property>
+  </action>
+  <action name="secret_button">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/img/imgonline-com-ua-Resize-yiUvn8BmKoM.png</normaloff>:/img/imgonline-com-ua-Resize-yiUvn8BmKoM.png</iconset>
+   </property>
+   <property name="text">
+    <string>Що там?</string>
+   </property>
+   <property name="toolTip">
+    <string>Тобі теж не терпиться подивитися?</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>img/icon_save.png</file>
+        <file>img/imgonline-com-ua-Resize-4g37bogRtaOsPph.png</file>
+        <file>img/imgonline-com-ua-Resize-yiUvn8BmKoM.png</file>
+        <file>img/imgonline-com-ua-Resize-pKXDUqlKFU.png</file>
+        <file>img/imgonline-com-ua-Resize-OuLDDCURvj.png</file>
+        <file>img/imgonline-com-ua-Resize-ia2jnX5RmH.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>img/imgonline-com-ua-Resize-yiUvn8BmKoM.png</file>
+    </qresource>
+</RCC>

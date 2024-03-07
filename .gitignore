@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/release
+/src/debug/course – копія.exe
+/src/course.pro.user
+/src/course.vcxproj.user
+/src/debug
